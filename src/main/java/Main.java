@@ -21,8 +21,6 @@ public class Main {
         int breakMin = 5;
         // кол-во подходов
         int count = 1;
-        // множитель времени работы
-        int workMinMultiplier = 1;
 
         // длина рисунка progress bar
         int sizePrint = 30;
@@ -38,7 +36,6 @@ public class Main {
                 case "-w" -> workMin = Integer.parseInt(cmd[++i]);
                 case "-b" -> breakMin = Integer.parseInt(cmd[++i]);
                 case "-count" -> count = Integer.parseInt(cmd[++i]);
-                case "-m" -> workMinMultiplier = Integer.parseInt(cmd[++i]);
                 case "-t" -> isTest = true;
             }
         }
